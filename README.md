@@ -57,7 +57,7 @@ Symbol | Meaning
 
 When the branch name starts with a colon `:`, it means it’s actually a hash, not a branch (although it should be pretty clear, unless you name your branches like hashes :-)
 
-## Install
+## Install prompt
 
 1.  Clone this repository somewhere on your hard drive.
 2.  Source the file `zshrc.sh` from your `~/.zshrc` config file, and
@@ -69,6 +69,11 @@ When the branch name starts with a colon `:`, it means it’s actually a hash, n
     PROMPT='%B%m%~%b$(git_super_status) %# '
     ```
 3.  Go in a git repository and test it!
+
+## Use as script
+
+run "./zshrc2.sh path/to/gitrepo"
+
 
 ### Haskell (optional)
 
