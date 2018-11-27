@@ -44,7 +44,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="OK"
 
 
     unset __CURRENT_GIT_STATUS
-
+	git remote update >/dev/null
         local gitstatus="$__GIT_PROMPT_DIR/gitstatus.py"
         _GIT_STATUS=`python ${gitstatus} 2>/dev/null`
      __CURRENT_GIT_STATUS=("${(@s: :)_GIT_STATUS}")
